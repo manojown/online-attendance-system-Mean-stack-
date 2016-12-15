@@ -1,0 +1,35 @@
+<div>
+	
+	<h2>Take Attendance</h2>
+	<div class="jumbotron">
+		<div class="container">
+			
+			<div class="table-title">
+			
+<h3>Your Course</h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-center">Course id </th>
+<th class="text-center">Course Name</th>
+<th class="text-center">Option</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+
+
+<tr ng-repeat="c in Courses">
+
+<td class="text-center">{{c.course_id}}</td>
+<td class="text-center">{{c.course_name}}</td>
+<td class="text-center"> <button ng-click="start($event)" class="btn btn-primary btn-lg btn-outline btn-rounded" id="{{c.course_id}}" ng-model="course_id" ng-value="{{c.course_id}}" ui-sref="barcode_tab" >Take attendance</barcode></td>
+{{course_id}}
+</tr>
+</tbody>	
+</table>
+{{course_id}}
+{{number}}
+		</div>
+	</div>
+</div>

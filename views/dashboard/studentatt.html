@@ -1,0 +1,46 @@
+
+
+
+
+
+	
+	
+
+<div>
+	
+	<h2>Reports</h2>
+	<div class="jumbotron">
+		<div class="container">
+			
+			<div class="table-title">
+
+<h3>Present days </h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+
+<h2><u>{{attendday.total[0].name}}</u> - {{attendday.total[0].sid}}</h2>
+<hr>
+
+<th class="text-center">Day</th>
+<th class="text-center">Date</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+
+
+<tr ng-repeat="c in attendday.studentatt">
+
+<td class="text-center">{{c.day}}</td>
+<td class="text-center">{{c.date}}</td>
+
+
+</tr>
+
+</tbody>	
+</table>
+
+		</div>
+	</div>
+</div>

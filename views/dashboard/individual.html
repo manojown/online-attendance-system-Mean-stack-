@@ -1,0 +1,47 @@
+
+
+
+
+
+	
+	
+
+<div>
+	
+	<h2>Reports</h2>
+	<div class="jumbotron">
+		<div class="container">
+			
+			<div class="table-title">
+	
+ <h2><u>{{attendancereport.total[0].name}} - {{attendancereport.total[0].cid}}</u> <h2>
+ <hr>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+
+<th class="text-center">Student ID</th>
+<th class="text-center">Student Name</th>
+<th class="text-center">Total Attendance</th>
+<th class="text-center">Total Percentage</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+
+
+<tr ng-repeat="c in attendancereport.student_details">
+
+<td class="text-center">{{c.student_id}}</td>
+<td class="text-center">{{c.student_name}}</td>
+<td class="text-center"> <button  class="btn btn-primary btn-lg btn-outline btn-rounded" id="{{c.student_id}}" ui-sref="studentatt" ng-click="studentatt(c.student_id,c.student_name,attendancereport.total[0].cid)">{{c.total}} </td></button>
+<td class="text-center"> <button  class="btn btn-primary btn-lg btn-outline btn-rounded" id="{{c.student_id}}" ui-sref="studentatt" ng-click="studentatt(c.student_id,c.student_name,attendancereport.total[0].cid)"> {{(c.total/attendancereport.total[0].total)*100}}%</button></td>
+
+</tr>
+
+</tbody>	
+</table>
+
+		</div>
+	</div>
+</div>

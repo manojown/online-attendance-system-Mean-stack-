@@ -1,0 +1,75 @@
+
+
+
+
+coursenum
+	
+	
+
+<div>
+	
+	<h2>Reports 		</h2>
+	<div class="jumbotron">
+		<div class="container">
+			
+			<div class="table-title">
+	
+<h3>Mark Attendance</h3>
+</div>
+<h3><span ng-if="!absent1">All Are Present</span></h3>
+<span ng-if="absent1">
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-center">Student ID </th>
+<th class="text-center">TO MARK</th>
+
+</tr>
+</thead>
+<tbody class="table-hover" >
+
+
+<tr ng-repeat="c in absent1" >
+
+<td class="text-center" >{{c}}</td>
+
+<td class="text-center"><button  class="btn btn-primary btn-lg btn-outline " ng-click="markAttendance(c)">Mark</td>
+
+</tr>
+
+</tbody>	
+</table>
+</span>
+<hr>
+<span ng-if="att">
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-center">Student ID </th>
+<th class="text-center">TO  Remove</th>
+
+</tr>
+</thead>
+<tbody class="table-hover" >
+
+
+<tr ng-repeat="c in att" >
+
+<td class="text-center" >{{c}}</td>
+
+<td class="text-center"><button  class="btn btn-primary btn-lg  btn btn-danger " ng-click="removeAttendance(c)">Remove</td>
+
+</tr>
+
+</tbody>	
+</table>
+</span>
+<button  class="btn btn-primary btn-lg btn-outline " ui-sref="successadd" ng-click="submit(cid12)" ng-if="att">Submit</td>
+
+		</div>
+	</div>
+</div>
+
+
+
+ 

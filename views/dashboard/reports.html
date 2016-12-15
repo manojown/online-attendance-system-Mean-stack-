@@ -1,0 +1,52 @@
+
+<div>
+
+  
+   <h2>Attendance Report</h2>
+
+	<div class="jumbotron">
+	 <a ui-sref='absent' class="pull-right btn btn-primary btn-outline btn-rounded" ng-click="absent(student[0].cname)"><span><button style="align-self: center;" class="btn btn-primary btn-lg btn-outline btn-rounded"  ui-sref="absent" >Check Absent </button></span></a> 
+   
+		<div class="container">	
+			<div class="table-title">		
+				<h3>Course Enrollment for {{student[0].cname}}</h3>
+			</div>
+			
+			<table class="table-fill">
+			
+
+			<thead>
+
+				<tr>
+				<tr>
+
+				</tr>
+				<tr>
+					<th class="text-center">Student id </th>
+					<th class="text-center">Student Name</th>
+					
+				</tr>
+			</thead>
+			
+<tbody class="table-hover"  >
+
+
+				<tr ng-repeat="st in student">
+
+<td class="text-center">{{st.student_id}}</td>
+<td class="text-center">{{st.student_name}}</td>
+
+				
+			    </tr>
+				</br>
+
+</tbody>	
+
+</table>
+
+		</div>
+	</div>
+</div>
+<script>
+	
+</script>

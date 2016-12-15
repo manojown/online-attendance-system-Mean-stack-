@@ -1,0 +1,43 @@
+
+
+
+
+coursenum
+	
+	
+
+<div>
+	
+	<h2>Reports</h2>
+	<div class="jumbotron">
+		<div class="container">
+			
+			<div class="table-title">
+			
+<h3>Your Course</h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-center">Course id </th>
+<th class="text-center">Course Name</th>
+<th class="text-center">Total Lecture</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+
+
+<tr ng-repeat="c in coursenum">
+
+<td class="text-center" >{{c.course_id}}</td>
+<td class="text-center" >{{c.course_name}}</td>
+<td class="text-center"><button  class="btn btn-primary btn-lg btn-outline btn-rounded" id="c.course_id" ui-sref="individual" ng-click="getatt(c.course_id,c.total,c.course_name)">{{c.total}}</td>
+
+</tr>
+
+</tbody>	
+</table>
+
+		</div>
+	</div>
+</div>

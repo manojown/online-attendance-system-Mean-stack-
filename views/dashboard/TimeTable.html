@@ -1,0 +1,50 @@
+
+
+<div>
+
+
+	
+	
+	
+	<div class="jumbotron">
+		<div class="container">
+			<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Search - </label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="search..." ng-model="data1">
+  </div>
+ 
+</form>
+			<div class="table-title">
+			
+
+
+</div>
+
+<table class="table table-condensed " >
+				<thead>
+				<tr>
+					<th class="text-center">Courses ID </th>
+					<th class="text-center">Course Name </th>
+					<th class="text-center">day</th>
+					<th class="text-center">Start Time </th>
+					<th class="text-center">
+					<th class="text-center">End Time</th>
+				</tr>
+				</thead>
+				<tbody class="table-hover"  ng-repeat="tt in coursestt |  filter:data1">
+				<tr>
+					<td class="text-center">{{tt.course_id}} </td>
+					<td class="text-center">{{tt.course_name}} </td>
+					<td class="text-center">{{tt.day}}</td>
+					<td class="text-center">{{tt.start}}<td><td class="text-center">{{tt.end}}</td>
+					
+				</tr>
+
+</tbody>	
+</table>
+
+		</div>
+	</div>
+</div>
+
