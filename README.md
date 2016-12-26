@@ -1,6 +1,7 @@
 # online-attendance-system
-online attendance system to reduce proxies in lecture and reduce faculty affort and manage a attendance digitally and report easily
-app URL - http://online-attendance-system4.herokuapp.com/
+online attendance system to reduce proxies in lecture and reduce faculty affort,  manage a attendance digitally , report easily
+app URL -
+# http://online-attendance-system4.herokuapp.com/
 
 # Modules 
     1 . To  Gnerate Barcode for reading by student smart-phone to mark his/her attedance
